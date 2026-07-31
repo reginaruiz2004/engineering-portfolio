@@ -8,6 +8,10 @@ export const skillCategories = [
     skills: ["Arduino", "Microcontroller Programming", "Sensor Integration", "PCB Basics"],
   },
   {
+    category: "Test & Measurement",
+    skills: ["Oscilloscope", "Bench Power Supply", "Multimeter", "Function Generator", "Logic Analyzer"],
+  },
+  {
     category: "Bioinformatics",
     skills: ["Genomic Data Analysis", "Statistical Modeling", "R", "Data Visualization"],
   },

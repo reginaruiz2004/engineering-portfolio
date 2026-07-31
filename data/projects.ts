@@ -3,8 +3,8 @@ export const featuredProjects = [
     title: "Hula Mixer & Megaruptor Automation",
     category: "Mechanical & Automation Engineering",
     description:
-      "Designed and automated laboratory mixing systems, including control logic and mechanical improvements to increase throughput and repeatability in a manufacturing environment.",
-    tags: ["Automation", "Mechanical Design", "Controls"],
+      "Designed and built a lab mixer from scratch — SolidWorks mechanical design, 3D-printed housings, and integrated motors and electronics — plus automation upgrades to the Megaruptor system. Diagnosed a motor phase-desync issue by isolating wiring/power sequencing from firmware timing using an oscilloscope and bench power supply, restoring smooth orbital motion.",
+    tags: ["Automation", "Mechanical Design", "Controls", "Hardware Debugging"],
     href: "/projects/hula-mixer",
   },
   {
