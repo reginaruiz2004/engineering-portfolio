@@ -1,5 +1,6 @@
 import { Activity, Code2, Cpu, Dna, FlaskConical, Wrench } from "lucide-react";
 import { skillCategories } from "@/data/skills";
+import { cardGradients } from "@/lib/palette";
 
 const icons: Record<string, React.ComponentType<{ className?: string }>> = {
   Programming: Code2,
@@ -9,12 +10,6 @@ const icons: Record<string, React.ComponentType<{ className?: string }>> = {
   "Laboratory Techniques": FlaskConical,
   "Engineering Tools": Wrench,
 };
-
-const palette = [
-  "linear-gradient(160deg, #1F3D2E 0%, #16302A 100%)",
-  "linear-gradient(160deg, #B4703A 0%, #8A5527 100%)",
-  "linear-gradient(160deg, #5C6F52 0%, #3E4A38 100%)",
-];
 
 export default function Skills() {
   return (
@@ -38,7 +33,7 @@ export default function Skills() {
             return (
               <div
                 key={group.category}
-                style={{ background: palette[index % palette.length] }}
+                style={{ background: cardGradients[index % cardGradients.length] }}
                 className="relative overflow-hidden rounded-t-[3rem] rounded-b-3xl p-8 pt-10 shadow-[0_20px_45px_-20px_rgba(31,61,46,0.45)] hover:shadow-[0_28px_55px_-18px_rgba(31,61,46,0.5)] hover:-translate-y-1.5 transition-all duration-300"
               >
                 <div
