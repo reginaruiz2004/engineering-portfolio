@@ -3,25 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Award, FolderGit2, Globe2, ArrowRight } from "lucide-react";
-
-const stats = [
-  {
-    icon: Award,
-    label: "Accomplishments",
-    detail: "6+ builds & awards",
-  },
-  {
-    icon: FolderGit2,
-    label: "Projects",
-    detail: "3 engineering projects",
-  },
-  {
-    icon: Globe2,
-    label: "Abroad",
-    detail: "1 intl. internship",
-  },
-];
+import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
@@ -89,25 +71,6 @@ export default function Hero() {
               Contact Me
             </Link>
           </div>
-
-          <div className="mt-14 flex flex-wrap gap-x-10 gap-y-8">
-            {stats.map((stat) => {
-              const Icon = stat.icon;
-              return (
-                <div key={stat.label} className="flex items-center gap-3.5">
-                  <div className="shrink-0 w-14 h-16 rounded-t-full rounded-b-xl bg-[#1F3D2E]/[0.08] flex items-center justify-center">
-                    <Icon className="w-5 h-5 text-[#1F3D2E]" />
-                  </div>
-                  <div>
-                    <div className="text-base font-[family-name:var(--font-questrial)] text-[#1F3D2E]">
-                      {stat.label}
-                    </div>
-                    <div className="mt-0.5 text-sm text-[#6B6255]">{stat.detail}</div>
-                  </div>
-                </div>
-              );
-            })}
-          </div>
         </motion.div>
       </div>
 
@@ -116,7 +79,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 10 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
-        className="absolute z-10 bottom-10 right-6 sm:right-12 rounded-t-full rounded-b-2xl bg-[#F3EDE1]/90 backdrop-blur-sm px-6 pt-4 pb-3 shadow-[0_16px_40px_-16px_rgba(31,61,46,0.35)]"
+        className="absolute z-10 bottom-6 right-6 sm:right-12 rounded-t-full rounded-b-2xl bg-[#F3EDE1]/90 backdrop-blur-sm px-6 pt-4 pb-3 shadow-[0_16px_40px_-16px_rgba(31,61,46,0.35)]"
       >
         <span className="font-[family-name:var(--font-questrial)] text-sm tracking-wide text-[#1F3D2E]">
           PCB Design · Embedded Systems

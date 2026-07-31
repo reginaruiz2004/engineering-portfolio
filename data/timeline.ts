@@ -17,7 +17,7 @@ export const timelineEvents = [
   {
     date: "2025",
     title: "CareAlert (GSIF)",
-    description: "Developed CareAlert as part of the Georgia Southern Innovation Fellowship, addressing a real-world healthcare need.",
+    description: "Developed CareAlert as part of the Global Social Impact Fellowship, addressing a real-world healthcare need.",
   },
   {
     date: "2025",
