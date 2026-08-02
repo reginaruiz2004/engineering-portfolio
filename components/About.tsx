@@ -111,12 +111,13 @@ export default function About() {
             aria-label="Regina Ruiz profile summary"
             className="rounded-[2.5rem] bg-[#F6F1E7] border border-[#1F3D2E]/10 shadow-[0_20px_45px_-20px_rgba(31,61,46,0.35)] overflow-hidden"
           >
-            <div className="relative h-64 w-full">
+            <div className="relative w-full aspect-[5/4]">
               <Image
                 src="/headshot.jpg"
                 alt="Portrait of Regina Ruiz"
                 fill
-                className="object-cover object-top"
+                sizes="(min-width: 1024px) 40vw, 100vw"
+                className="object-cover object-[center_35%]"
               />
             </div>
 
