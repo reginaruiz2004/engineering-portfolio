@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import About from "@/components/About";
+import Timeline from "@/components/Timeline";
 
 export const metadata: Metadata = {
   title: "About — Regina Ruiz",
@@ -10,6 +11,7 @@ export default function AboutPage() {
   return (
     <div className="flex flex-col flex-1">
       <About />
+      <Timeline />
     </div>
   );
 }

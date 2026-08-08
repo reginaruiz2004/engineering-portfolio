@@ -1,15 +1,21 @@
 import Hero from "@/components/Hero";
-import FeaturedProjects from "@/components/FeaturedProjects";
+import FocusStrip from "@/components/FocusStrip";
+import SelectedWork from "@/components/SelectedWork";
+import HowIBuild from "@/components/HowIBuild";
 import Skills from "@/components/Skills";
-import Timeline from "@/components/Timeline";
+import AboutTeaser from "@/components/AboutTeaser";
+import ContactCTA from "@/components/ContactCTA";
 
 export default function Home() {
   return (
     <div className="flex flex-col flex-1">
       <Hero />
-      <FeaturedProjects />
+      <FocusStrip />
+      <SelectedWork />
+      <HowIBuild />
       <Skills />
-      <Timeline />
+      <AboutTeaser />
+      <ContactCTA />
     </div>
   );
 }

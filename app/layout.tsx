@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk, Inter, IBM_Plex_Mono, Questrial } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import BackgroundPattern from "../components/BackgroundPattern";
 
 const spaceGrotesk = Space_Grotesk({ variable: "--font-heading", subsets: ["latin"] });
@@ -26,6 +27,7 @@ export default function RootLayout({
         <BackgroundPattern />
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );
