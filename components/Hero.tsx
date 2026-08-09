@@ -27,13 +27,13 @@ export default function Hero() {
             Bioengineering · Bioelectronics
           </span>
 
-          <p className="mt-9 text-lg text-[#6B6255] font-[family-name:var(--font-questrial)]">
-            Hi, I&apos;m
-          </p>
-
-          <h1 className="mt-1 text-[#1F3D2E] leading-[0.92] tracking-tight font-[family-name:var(--font-questrial)]">
-            <span className="block text-[clamp(3.25rem,9vw,7.5rem)]">Regina</span>
-            <span className="block text-[clamp(3.25rem,9vw,7.5rem)]">Ruiz</span>
+          <h1 className="mt-8 text-[#1F3D2E] tracking-tight font-[family-name:var(--font-questrial)]">
+            <span className="block text-[clamp(2.75rem,6vw,4.75rem)] font-normal text-[#6B6255]">
+              Hi, I&apos;m
+            </span>
+            <span className="mt-2 block text-[clamp(2.75rem,7vw,5.75rem)] leading-[0.95] whitespace-nowrap">
+              Regina Ruiz
+            </span>
           </h1>
 
           <p className="mt-8 text-2xl sm:text-3xl text-[#1F3D2E] font-[family-name:var(--font-questrial)] max-w-xl leading-snug">
@@ -63,14 +63,14 @@ export default function Hero() {
 
         {/* Right: portrait */}
         <motion.div {...fadeUp(0.15)} className="relative">
-          <div className="relative mx-auto w-full max-w-sm aspect-[3/4] rounded-t-full rounded-b-[2.5rem] overflow-hidden border border-[#1F3D2E]/15 shadow-[0_30px_60px_-25px_rgba(31,61,46,0.4)]">
+          <div className="relative mx-auto w-full max-w-sm aspect-square rounded-3xl overflow-hidden border border-[#1F3D2E]/15 shadow-[0_30px_60px_-25px_rgba(31,61,46,0.4)]">
             <Image
               src="/headshot.jpg"
               alt="Portrait of Regina Ruiz"
               fill
               priority
               sizes="(min-width: 1024px) 32vw, 80vw"
-              className="object-cover object-[center_18%]"
+              className="object-cover object-[center_20%]"
             />
           </div>
           <div className="mt-6 flex items-center justify-center gap-3">
