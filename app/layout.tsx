@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, Inter, IBM_Plex_Mono, Questrial } from "next/font/google";
+import { Space_Grotesk, Inter, IBM_Plex_Mono, Questrial, Radio_Canada, Fraunces } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -9,6 +9,8 @@ const spaceGrotesk = Space_Grotesk({ variable: "--font-heading", subsets: ["lati
 const inter = Inter({ variable: "--font-body", subsets: ["latin"] });
 const plexMono = IBM_Plex_Mono({ variable: "--font-mono", weight: ["400", "500"], subsets: ["latin"] });
 const questrial = Questrial({ variable: "--font-questrial", weight: "400", subsets: ["latin"] });
+const radioCanada = Radio_Canada({ variable: "--font-radio", weight: ["400", "500", "600"], subsets: ["latin"] });
+const fraunces = Fraunces({ variable: "--font-roxborough", weight: ["500", "600"], subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Regina Ruiz — Bioengineering Portfolio",
@@ -21,7 +23,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${spaceGrotesk.variable} ${inter.variable} ${plexMono.variable} ${questrial.variable} h-full antialiased`}
+      className={`${spaceGrotesk.variable} ${inter.variable} ${plexMono.variable} ${questrial.variable} ${radioCanada.variable} ${fraunces.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-[#EDE6D6] font-[family-name:var(--font-body)] text-[17px] leading-[1.6] relative">
         <BackgroundPattern />
