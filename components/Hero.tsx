@@ -20,11 +20,11 @@ export default function Hero() {
         className="pointer-events-none absolute -top-40 -right-32 w-[30rem] h-[30rem] rounded-full bg-[#1F3D2E]/[0.06] blur-2xl"
       />
 
-      <div className="relative z-10 w-full max-w-[1600px] mx-auto grid lg:grid-cols-[1fr_1fr] gap-16 lg:gap-20 items-start">
+      <div className="relative z-10 w-full max-w-[1600px] mx-auto grid lg:grid-cols-[1fr_1fr] gap-16 lg:gap-20 items-center">
         {/* Left: introduction */}
         <motion.div {...fadeUp()}>
-          <h1 className="text-[#1F3D2E] tracking-tight font-[family-name:var(--font-radio)]">
-            <span className="block text-[clamp(2.75rem,6vw,4.75rem)] font-normal text-[#6B6255]">
+          <h1 className="text-[#1F3D2E] tracking-tight">
+            <span className="block text-[clamp(2.75rem,6vw,4.75rem)] font-normal text-[#6B6255] font-[family-name:var(--font-questrial)]">
               Hi, I&apos;m
             </span>
             <span className="mt-2 block text-[clamp(3rem,7.5vw,6rem)] leading-[0.95] whitespace-nowrap font-[family-name:var(--font-roxborough)] font-medium">
