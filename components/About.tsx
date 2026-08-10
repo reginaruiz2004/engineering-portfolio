@@ -70,18 +70,33 @@ export default function About() {
             <div className="mt-6 space-y-5 max-w-2xl text-lg text-[#6B6255] leading-relaxed">
               <p>
                 I&apos;m a Bioengineering student at Lehigh University focused on bioelectronics, embedded systems,
-                and biomedical-device development — particularly technologies that turn biological measurements
-                into useful information, feedback, or clinical tools.
+                and biomedical-device development. My work sits at the intersection of electronics, biology, and
+                computation, with a particular interest in technologies that can sense, interpret, and interact
+                with biological systems.
               </p>
               <p>
-                My work spans the full prototype process: circuit and PCB design, embedded programming, mechanical
-                fabrication, laboratory testing, and data analysis. I&apos;m drawn to projects that move between
-                hardware, software, and biology rather than treating them as separate disciplines.
+                My current research interests center on flexible and mechanically compliant bioelectronics for
+                interfacing with human tissue. I&apos;m especially interested in developing conformable electronic
+                platforms that integrate microscale sensors and electrodes, flexible circuit architectures,
+                data-acquisition systems, and signal-processing electronics to record electrophysiological
+                activity with high fidelity. Longer term, I hope to explore systems capable of not only sensing
+                biological signals, but also delivering controlled electrical or optical stimulation for
+                closed-loop bioelectronic and neural interfaces.
               </p>
               <p>
-                Across laboratory automation, wearable rehabilitation technology, microfluidics, and computational
-                biology, I focus on building systems that are practical, testable, and grounded in real user or
-                research needs.
+                I&apos;m particularly drawn to the engineering challenges that emerge when electronics are designed
+                to operate directly with living tissue: mechanical mismatch, signal quality, miniaturization,
+                biocompatibility, long-term interface stability, and reliable acquisition of physiologically
+                meaningful data.
+              </p>
+              <p>
+                My project experience spans circuit and PCB design, embedded programming, mechanical fabrication,
+                laboratory experimentation, and computational analysis. Across laboratory instrumentation,
+                wearable rehabilitation technology, microfluidics, and computational biology, I enjoy working
+                across hardware, software, and biology rather than treating them as separate disciplines.
+                Ultimately, I want to contribute to bioelectronic technologies that translate fundamental
+                engineering research into practical tools for understanding, monitoring, and interacting with
+                biological systems.
               </p>
             </div>
 
