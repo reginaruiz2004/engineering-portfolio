@@ -14,13 +14,13 @@ export default function Hero() {
   });
 
   return (
-    <section className="relative overflow-hidden min-h-[88vh] flex items-center bg-[#EDE6D6] px-6 sm:px-12 lg:px-20 py-24">
+    <section className="relative overflow-hidden min-h-[88vh] flex items-center bg-[#EDE6D6] px-4 sm:px-6 lg:px-10 py-24">
       <div
         aria-hidden
         className="pointer-events-none absolute -top-40 -right-32 w-[30rem] h-[30rem] rounded-full bg-[#1F3D2E]/[0.06] blur-2xl"
       />
 
-      <div className="relative z-10 w-full max-w-7xl mx-auto grid lg:grid-cols-[1fr_1fr] gap-16 lg:gap-20 items-start">
+      <div className="relative z-10 w-full max-w-[1600px] mx-auto grid lg:grid-cols-[1fr_1fr] gap-16 lg:gap-20 items-start">
         {/* Left: introduction */}
         <motion.div {...fadeUp()}>
           <h1 className="text-[#1F3D2E] tracking-tight font-[family-name:var(--font-radio)]">
