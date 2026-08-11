@@ -1,26 +1,50 @@
-export const featuredProjects = [
+export type ProjectStatus = "in-progress" | "completed";
+
+export type Project = {
+  slug: string;
+  title: string;
+  status: ProjectStatus;
+  statusLine: string;
+  description: string;
+  image: string;
+  imageAlt: string;
+  imagePosition: "left" | "right";
+};
+
+// Ordered most recent first. This array order is the display order —
+// insert new projects wherever they belong chronologically.
+export const projects: Project[] = [
   {
-    title: "Hula Mixer & Megaruptor Automation",
-    category: "Mechanical & Automation Engineering",
+    slug: "signal-acquisition-board-ecg",
+    title: "Signal Acquisition Board (ECG)",
+    status: "in-progress",
+    statusLine: "In progress, Fall 2026",
     description:
-      "Designed and built a lab mixer from scratch — SolidWorks mechanical design, 3D-printed housings, and integrated motors and electronics — plus automation upgrades to the Megaruptor system. Diagnosed a motor phase-desync issue by isolating wiring/power sequencing from firmware timing using an oscilloscope and bench power supply, restoring smooth orbital motion.",
-    tags: ["Automation", "Mechanical Design", "Controls", "Hardware Debugging"],
-    href: "/projects/hula-mixer",
+      "This is the first piece of a four-project pipeline I built out for senior year, all pointing toward one goal: proving I can take a wearable biomedical device from architecture to working hardware. Rather than jump straight to a custom PCB, I wanted to de-risk the signal chain first — so I paired a TI ADS1292RECG-FE analog front-end eval board with a Nordic nRF52-DK to validate ECG acquisition and BLE independently before combining them. Right now I'm resolving the component list for the board that comes next, turning generic references like \"an LDO\" into specific parts I can actually source and hand-solder. PCB design is up next.",
+    image: "/signalacquisition.png",
+    imageAlt: "Signal acquisition board bench setup for ECG validation",
+    imagePosition: "left",
   },
   {
-    title: "Epigenetic Clock",
-    category: "Bioinformatics",
+    slug: "megaruptor-automation",
+    title: "MegaRuptor Automation",
+    status: "completed",
+    statusLine: "Granatum Bioworks, 2026",
     description:
-      "Built a computational pipeline to estimate biological age from epigenetic data, applying statistical modeling to methylation datasets to uncover aging biomarkers.",
-    tags: ["Python", "Bioinformatics", "Data Analysis"],
-    href: "/projects/epigenetic-clock",
+      "During my internship at Granatum, the workflow needed a MegaRuptor for DNA/sample shearing, but the commercial unit didn't make sense for the budget we were working with. So I designed and 3D-printed one myself, then validated it against what the workflow actually required. Cut the cost by more than 90% without cutting the function.",
+    image: "/reginatronfinal.jpg",
+    imageAlt: "Custom 3D-printed MegaRuptor instrument",
+    imagePosition: "right",
   },
   {
-    title: "Raspberry Crossbreeding Pipeline",
-    category: "Computational Genetics",
+    slug: "hula-mixer",
+    title: "Hula Mixer",
+    status: "completed",
+    statusLine: "Granatum Bioworks, 2026",
     description:
-      "Developed a genetics analysis pipeline to identify optimal raspberry crossbreeds for commercial traits, combining genomic data processing with breeding-outcome prediction.",
-    tags: ["Genomics", "Data Pipelines", "Agricultural Tech"],
-    href: "/projects/auragen",
+      "Same problem, different instrument. The lab needed a Hula Mixer for mixing/rocking step, and again, buying one outright wasn't practical. I built and validated a 3D-printed replacement — over 90% cheaper, holding up to actual use in the lab.",
+    image: "/hulamixerfinal.jpg",
+    imageAlt: "Custom 3D-printed Hula Mixer instrument",
+    imagePosition: "left",
   },
 ];

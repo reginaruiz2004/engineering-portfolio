@@ -11,7 +11,12 @@
       "PowerShell(taskkill /PID 49228 /F)",
       "Bash(git add *)",
       "Bash(git commit -m ' *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(git -C /c/engineering-portfolio status --short)",
+      "Bash(git -C /c/engineering-portfolio log --oneline -5)",
+      "Bash(cp /c/engineering-portfolio/images/signalacquisition.png /c/engineering-portfolio/public/signalacquisition.png)",
+      "Bash(cp /c/engineering-portfolio/images/reginatronfinal.jpg /c/engineering-portfolio/public/reginatronfinal.jpg)",
+      "Bash(cp /c/engineering-portfolio/images/hulamixerfinal.jpg /c/engineering-portfolio/public/hulamixerfinal.jpg)"
     ]
   }
 }
