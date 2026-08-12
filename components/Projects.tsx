@@ -38,7 +38,7 @@ export default function Projects() {
             className="grid lg:grid-cols-2 gap-10 lg:gap-20 items-center py-16 first:pt-0 last:pb-0"
           >
             <div
-              className={`relative w-full aspect-[4/3] rounded-[2rem] overflow-hidden border border-[#1F3D2E]/15 shadow-[0_25px_55px_-25px_rgba(31,61,46,0.4)] ${
+              className={`relative w-full aspect-[4/3] rounded-[2rem] overflow-hidden border border-[#1F3D2E]/15 bg-[#F6F1E7] shadow-[0_25px_55px_-25px_rgba(31,61,46,0.4)] ${
                 project.imagePosition === "right" ? "lg:order-2" : ""
               }`}
             >
@@ -47,7 +47,7 @@ export default function Projects() {
                 alt={project.imageAlt}
                 fill
                 sizes="(min-width: 1024px) 45vw, 100vw"
-                className="object-cover"
+                className={project.imageFit === "contain" ? "object-contain" : "object-cover"}
               />
             </div>
 

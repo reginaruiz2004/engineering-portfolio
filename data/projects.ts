@@ -9,6 +9,7 @@ export type Project = {
   image: string;
   imageAlt: string;
   imagePosition: "left" | "right";
+  imageFit?: "cover" | "contain";
 };
 
 // Ordered most recent first. This array order is the display order —
@@ -32,9 +33,10 @@ export const projects: Project[] = [
     statusLine: "Granatum Bioworks, 2026",
     description:
       "During my internship at Granatum, the workflow needed a MegaRuptor for DNA/sample shearing, but the commercial unit didn't make sense for the budget we were working with. So I designed and 3D-printed one myself, then validated it against what the workflow actually required. Cut the cost by more than 90% without cutting the function.",
-    image: "/reginatronfinal.jpg",
+    image: "/reginatronconbase.jpeg",
     imageAlt: "Custom 3D-printed MegaRuptor instrument",
     imagePosition: "right",
+    imageFit: "contain",
   },
   {
     slug: "hula-mixer",
