@@ -101,16 +101,12 @@ export default function About() {
             </div>
 
             <div className="mt-10 flex flex-wrap items-center gap-4">
-              <button
-                type="button"
-                disabled
-                aria-disabled="true"
-                title="Résumé PDF coming soon"
-                className="inline-flex items-center gap-2 rounded-full bg-[#1F3D2E]/40 text-[#F3EDE1] px-8 py-4 text-base font-[family-name:var(--font-questrial)] cursor-not-allowed"
+              <Link
+                href="/resume"
+                className="inline-flex items-center gap-2 rounded-full bg-[#1F3D2E] text-[#F3EDE1] px-8 py-4 text-base font-[family-name:var(--font-questrial)] hover:bg-[#B4703A] transition-colors"
               >
                 View Résumé
-                <span className="text-xs normal-case tracking-normal text-[#F3EDE1]/80">(coming soon)</span>
-              </button>
+              </Link>
               <Link
                 href="/contact"
                 className="rounded-full border border-[#1F3D2E]/25 text-[#1F3D2E] px-8 py-4 text-base font-[family-name:var(--font-questrial)] hover:bg-[#1F3D2E]/5 transition-colors"
