@@ -1,5 +1,12 @@
 export type ProjectStatus = "in-progress" | "completed";
 
+export type ProjectResults = {
+  description: string;
+  image: string;
+  imageAlt: string;
+  caption: string;
+};
+
 export type Project = {
   slug: string;
   title: string;
@@ -10,6 +17,7 @@ export type Project = {
   imageAlt: string;
   imagePosition: "left" | "right";
   imageFit?: "cover" | "contain";
+  results?: ProjectResults;
 };
 
 // Ordered most recent first. This array order is the display order —
@@ -37,6 +45,15 @@ export const projects: Project[] = [
     imageAlt: "Custom 3D-printed MegaRuptor instrument",
     imagePosition: "right",
     imageFit: "contain",
+    results: {
+      description:
+        "Following deployment at Granatum Bioworks, the custom MegaRuptor continued to be used as part of the DNA sequencing workflow. Subsequent Oxford Nanopore sequencing runs showed a substantially more balanced distribution of barcoded reads across samples, providing downstream validation that the instrument was performing effectively during sample preparation.",
+      image: "/MegaRuptorResults.jpg",
+      imageAlt:
+        "Oxford Nanopore MinKNOW sequencing results showing balanced barcode yields after sample preparation using the custom MegaRuptor.",
+      caption:
+        "Oxford Nanopore sequencing output following sample preparation with the custom MegaRuptor. Barcode yields show a more balanced distribution across processed samples.",
+    },
   },
   {
     slug: "hula-mixer",
